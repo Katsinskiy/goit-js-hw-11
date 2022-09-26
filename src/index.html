@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 11</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    
   </head>
   <body>
+    <section class="container">
+    <button type="button" class="btn-move-down is-hidden">down on 2 rows</button>
+    <button type="button" class="btn-move-up is-hidden">go top</button>
     <form class="search-form" id="search-form">
       <input
         type="text"
@@ -15,15 +18,15 @@
         autocomplete="off"
         placeholder="Search images..."
       />
-      <button type="submit">Search</button>
+      <button type="submit" class="search">Search</button>
     </form>
     <div class="gallery">
-      <!-- Карточки изображений -->
     </div>
     <div class="target-element"></div>
     <button type="button" class="load-more is-hidden">Load more</button>
-    <!-- <script src="galleryOnFeach.js" type="module"></script> -->
-    <!-- <script src="galleryOnAxios.js" type="module"></script> -->
-    <script src="galleryOnAxiosScroll.js" type="module"></script>
+  </section>
+
+    <script type="module" src="./index.js"></script>
+    
   </body>
 </html>
